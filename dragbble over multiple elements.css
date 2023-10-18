@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(140, 122, 230,1.0);
+}
+ul{
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+}
+ul li img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+ul li{
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3%;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    user-select: none;
+    transition: .5s linear;
+}
+
+ul li:nth-child(4){
+    margin-bottom: 0;
+}
+.dragging{
+    opacity: 0;
+    transition: .5s linear;
+}
